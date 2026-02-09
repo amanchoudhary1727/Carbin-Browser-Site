@@ -20,6 +20,7 @@ export const FEATURES = [
     icon: 'bot',
     mockUrl: 'browser://ai-extractor',
     placeholderImage: 'https://placehold.co/1200x800/1a1d20/dfd2b9?text=AI+Data+Extractor+Interface',
+    customImage: '/ai.png',
     sections: [
       {
         heading: 'Overview',
@@ -62,6 +63,7 @@ export const FEATURES = [
     icon: 'mask',
     mockUrl: 'browser://tor-connection',
     placeholderImage: 'https://placehold.co/1200x800/1a1d20/dfd2b9?text=Tor+Mode+Circuit+View',
+    customImage: '/tor.png',
     sections: [
       {
         heading: 'Overview',
@@ -108,6 +110,7 @@ export const FEATURES = [
     icon: 'database',
     mockUrl: 'browser://scraper-tool',
     placeholderImage: 'https://placehold.co/1200x800/1a1d20/dfd2b9?text=DOM+Scraper+Interface',
+    customImage: '/scraper.png',
     sections: [
       {
         heading: 'Overview',
@@ -158,6 +161,7 @@ export const FEATURES = [
     icon: 'mail',
     mockUrl: 'browser://email-tools',
     placeholderImage: 'https://placehold.co/1200x800/1a1d20/dfd2b9?text=Email+Template+Overlay+Interface',
+    customImage: '/email.png',
     sections: [
       {
         heading: 'Overview',
@@ -200,6 +204,7 @@ export const FEATURES = [
     icon: 'target',
     mockUrl: 'browser://focus-settings',
     placeholderImage: 'https://placehold.co/1200x800/1a1d20/dfd2b9?text=Focus+Mode+Settings',
+    customImage: '/focus.png',
     sections: [
       {
         heading: 'Overview',
@@ -228,7 +233,7 @@ export const FEATURES = [
             title: '4. Hide All Images',
             content: 'Effect: Hides all thumbnails, avatars, and banner images. Text remains visible.\nBenefit: Extreme bandwidth saving and removes "clickbait" visual triggers.'
           },
-           {
+          {
             title: '5. Audio Only Mode',
             content: 'Effect: A black overlay covers the video player, but audio continues playing.\nBenefit: Perfect for listening to video essays, podcasts, or music while working, saving CPU/GPU resources and reducing visual distraction.'
           }
@@ -259,49 +264,49 @@ export const FEATURES = [
         heading: 'Color Palette',
         content: 'The theme relies on a strict set of variables defined in the codebase.',
         subsections: [
-            {
-                title: 'Background & Surface',
-                content: '--shark (#1a1d20): Deep, dark grey/blue. Used for the main body.\n--outer-space (#31383f): Slightly lighter. Used for toolbars and active tabs.'
-            },
-            {
-                title: 'Accent & Text',
-                content: '--cosmic (#733864): Muted Purple. Used for hover states and major buttons.\n--bone (#dfd2b9): Warm white/beige. Easy on the eyes for high contrast.'
-            },
-            {
-                title: 'Functional Colors',
-                content: '--slate-gray (#6d7a8c): Cool gray. Used for distinct, hard edges.\n--bistre (#362b1b): Dark brown. Used for URL bars and text areas.\n--retro-yellow (#ffff00): Pure terminal yellow. Used for warnings or "glowing" text.'
-            }
+          {
+            title: 'Background & Surface',
+            content: '--shark (#1a1d20): Deep, dark grey/blue. Used for the main body.\n--outer-space (#31383f): Slightly lighter. Used for toolbars and active tabs.'
+          },
+          {
+            title: 'Accent & Text',
+            content: '--cosmic (#733864): Muted Purple. Used for hover states and major buttons.\n--bone (#dfd2b9): Warm white/beige. Easy on the eyes for high contrast.'
+          },
+          {
+            title: 'Functional Colors',
+            content: '--slate-gray (#6d7a8c): Cool gray. Used for distinct, hard edges.\n--bistre (#362b1b): Dark brown. Used for URL bars and text areas.\n--retro-yellow (#ffff00): Pure terminal yellow. Used for warnings or "glowing" text.'
+          }
         ]
       },
       {
         heading: 'Typography',
         content: 'The browser uses two distinct typefaces to convey its identity.',
         subsections: [
-            {
-                title: 'Headings & Brand',
-                content: 'Font: Press Start 2P\nStyle: 8-bit, pixelated, blocky.\nUsage: App logo, error page headers, main section titles.\nSource: Google Fonts'
-            },
-            {
-                title: 'UI & Content',
-                content: 'Font: Courier New (System Monospace)\nStyle: Typewriter/Terminal.\nUsage: URL bar, settings, body text, data tables, logs.\nWhy: It ensures character alignment (tabular nums) which is crucial for the data extraction features.'
-            }
+          {
+            title: 'Headings & Brand',
+            content: 'Font: Press Start 2P\nStyle: 8-bit, pixelated, blocky.\nUsage: App logo, error page headers, main section titles.\nSource: Google Fonts'
+          },
+          {
+            title: 'UI & Content',
+            content: 'Font: Courier New (System Monospace)\nStyle: Typewriter/Terminal.\nUsage: URL bar, settings, body text, data tables, logs.\nWhy: It ensures character alignment (tabular nums) which is crucial for the data extraction features.'
+          }
         ]
       },
       {
         heading: 'UI Components & Patterns',
         subsections: [
-            {
-                title: 'Buttons',
-                content: 'No Border Radius: All buttons are perfect rectangles. 0px radius.\nHard Shadows: box-shadow: 2px 2px 0px #000; gives a "pressed" feel.\nHover State: Background shifts to Cosmic (#733864). Borders light up to Bone (#dfd2b9).\nActive State: The button physically moves: transform: translate(2px, 2px); to cover its own shadow.'
-            },
-            {
-                title: 'Inputs (URL Bar)',
-                content: 'Inset Shadow: box-shadow: inset 2px 2px 0px #333; creates depth, making it look like a CRT screen recess.\nFocus: Becomes absolute black #000 to simulate a terminal prompt.'
-            },
-            {
-                title: 'Icons & Panels',
-                content: 'Icons: Solid, sharp icons preferred over rounded ones.\nPanels: A slight "bounce" when opening, mimicking mechanical movement. Borders are thick and separated from the main content.'
-            }
+          {
+            title: 'Buttons',
+            content: 'No Border Radius: All buttons are perfect rectangles. 0px radius.\nHard Shadows: box-shadow: 2px 2px 0px #000; gives a "pressed" feel.\nHover State: Background shifts to Cosmic (#733864). Borders light up to Bone (#dfd2b9).\nActive State: The button physically moves: transform: translate(2px, 2px); to cover its own shadow.'
+          },
+          {
+            title: 'Inputs (URL Bar)',
+            content: 'Inset Shadow: box-shadow: inset 2px 2px 0px #333; creates depth, making it look like a CRT screen recess.\nFocus: Becomes absolute black #000 to simulate a terminal prompt.'
+          },
+          {
+            title: 'Icons & Panels',
+            content: 'Icons: Solid, sharp icons preferred over rounded ones.\nPanels: A slight "bounce" when opening, mimicking mechanical movement. Borders are thick and separated from the main content.'
+          }
         ]
       },
       {

@@ -20,8 +20,8 @@ export const Features: React.FC = () => {
         <h2 className="font-retro text-3xl text-center mb-16 text-white drop-shadow-[3px_3px_0px_#000]">
           SYSTEM MODULES
         </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {FEATURES.map((feature) => (
             <Link key={feature.id} to={`/feature/${feature.slug}`} className="block h-full">
               <Card className="flex flex-col items-center text-center h-full group cursor-pointer hover:bg-outerSpace transition-colors">
@@ -34,8 +34,9 @@ export const Features: React.FC = () => {
                 <p className="font-mono text-cadetBlue text-sm leading-relaxed">
                   {feature.description}
                 </p>
+
                 <div className="mt-auto pt-4 text-xs font-mono text-slateGray opacity-0 group-hover:opacity-100 transition-opacity">
-                   [ CLICK TO INSPECT ]
+                  [ CLICK TO INSPECT ]
                 </div>
               </Card>
             </Link>

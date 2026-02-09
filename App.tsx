@@ -18,15 +18,16 @@ const App: React.FC = () => {
     <HashRouter>
       <ScrollToTop />
       <main className="min-h-screen bg-shark text-bone selection:bg-cosmic selection:text-white">
-        
+
         {/* Global Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 bg-shark/90 backdrop-blur-sm border-b-2 border-slateGray py-3 px-4 md:px-8 flex justify-between items-center">
-          <a href="#/" className="font-retro text-white text-sm md:text-base cursor-pointer hover:text-retroYellow transition-colors">
-            MY_BROWSER
+          <a href="#/" className="font-retro text-white text-sm md:text-base cursor-pointer hover:text-retroYellow transition-colors flex items-center">
+            <img src={`${import.meta.env.BASE_URL}icon.ico`} alt="Carbin Logo" className="w-6 h-6 mr-2 inline-block filter brightness-100 contrast-125" />
+            CARBIN
           </a>
           <div className="flex gap-4">
-             <a href="#/feature/ai-assistant" className="hidden md:block font-mono text-xs text-slateGray hover:text-white">MODULES</a>
-             <a href="#/" className="font-mono text-xs md:text-sm text-bone hover:text-retroYellow hover:underline decoration-2">HOME</a>
+            <a href="#/feature/ai-assistant" className="hidden md:block font-mono text-xs text-slateGray hover:text-white">MODULES</a>
+            <a href="#/" className="font-mono text-xs md:text-sm text-bone hover:text-retroYellow hover:underline decoration-2">HOME</a>
           </div>
         </nav>
 
@@ -38,7 +39,7 @@ const App: React.FC = () => {
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
-        
+
         <Footer />
       </main>
     </HashRouter>
