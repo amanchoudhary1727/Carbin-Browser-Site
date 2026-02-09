@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Browser - Browse Like It's 1999</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              shark: '#1a1d20',
+              outerSpace: '#31383f',
+              cosmic: '#733864',
+              bone: '#dfd2b9',
+              slateGray: '#6d7a8c',
+              bistre: '#362b1b',
+              cadetBlue: '#a0adc5',
+              retroYellow: '#ffff00',
+            },
+            fontFamily: {
+              retro: ['"Press Start 2P"', 'cursive'],
+              mono: ['"Courier Prime"', 'Courier New', 'monospace'],
+            },
+            boxShadow: {
+              'retro': '2px 2px 0px #000',
+              'retro-lg': '4px 4px 0px #000',
+              'retro-xl': '6px 6px 0px #000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for that extra retro feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background: #1a1d20;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #31383f;
+        border: 2px solid #6d7a8c;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #733864;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.22.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-shark text-bone font-mono selection:bg-cosmic selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
